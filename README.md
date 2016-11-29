@@ -22,14 +22,15 @@ Used Technologies:
 **Method** GET  
 **HTTP response** 200  
 **HTTP response body (JSON)**  
-'{  
+```  
+{  
   "public_id": "1",  
   "cryptedPassword": "dasdas",  
   "nationality": "Portuguese",  
   "creationDate": "2016-11-28",  
   "isDeleted": true  
-}'  
-
+}
+```  
 
 #### Do login  
 **Description** Login user by giving his data  
@@ -53,13 +54,16 @@ null
 **URL** http://127.0.0.1:8080/web/rest/actors   
 **Method** POST  
 **HTTP request body**  
-'{ "public_id":"andremfaria",  
+```
+{ "public_id":"andremfaria",  
    "cryptedPassword":"faria",  
    "nationality":"Brazil",  
    "creationDate":null,  
    "isDeleted":false  
-}'  
-**HTTP response** 200 (OK) or 430 (NOK)  
+}
+```  
+
+**HTTP response** 200 (OK) or 430 (NOK)  
 **HTTP response body (JSON)**  
 null  
 
@@ -68,13 +72,16 @@ null
 **URL** http://127.0.0.1:8080/web/rest/actors   
 **Method** PUT  
 **HTTP request body**  
-'{ "public_id":"andremfaria",  
+```  
+{ "public_id":"andremfaria",  
    "cryptedPassword":"newpassword",  
    "nationality":"Brazil",  
    "creationDate":null,  
    "isDeleted":false  
-}'  
-**HTTP response** 200 (OK) or 430 (NOK)  
+}
+```  
+
+**HTTP response** 200 (OK) or 430 (NOK)  
 **HTTP response body (JSON)**  
 null  
 
@@ -86,24 +93,29 @@ null
 **Method** GET  
 **HTTP response** 200  
 **HTTP response body (JSON)**  
-'{
+```
+{
   "identifier": 5,
   "points": 12341212,
   "creationDate": "2016-11-03",
   "actorId": "1"
-}'  
+}
+```
 
-#### Insert highscore  
+#### Insert highscore  
 **Description** Insert highscore in database  
 **URL** http://127.0.0.1:8080/web/rest/highscores   
 **Method** POST  
 **HTTP request body**  
-'{
-  "identifier": 8,  
+```
+{
+  "identifier": 8,  
   "points": 31232112,  
   "creationDate": "2016-11-28",  
   "actorId": "cr7"  
-}'  
+}
+```  
+
 **HTTP response** 200 (OK) or 430 (NOK)  
 **HTTP response body (JSON)**  
 null  
@@ -135,9 +147,9 @@ null
 **Description** Get all highscores ordered by Points.  
 **URL** http://127.0.0.1:8080/web/rest/highscores/getall   
 **Method** GET  
-**HTTP response** 200 (OK)  
-**HTTP response body (JSON)**  
-'''
+**HTTP response** 200 (OK)  
+**HTTP response body (JSON)**  
+
 [  
   {  
     "identifier": 4,  
@@ -156,9 +168,9 @@ null
     "points": 12,  
     "creationDate": "2016-11-03",  
     "actorId": "player2"  
-  }  
-]  
-'''
+  }  
+]  
+
 
 
 #### Get Slice of all highscores  
@@ -166,10 +178,10 @@ null
 **URL** http://127.0.0.1:8080/web/rest/highscores/getbetween?first=1&last=2 
 **Method** GET  
 **HTTP response** 200 (OK)  
-**HTTP response body (JSON)**  
-'''
-[  
-  {  
+**HTTP response body (JSON)**  
+```
+[ 
+  {  
     "identifier": 4,  
     "points": 123212,  
     "creationDate": "2016-11-03",  
@@ -180,9 +192,9 @@ null
     "points": 12312,  
     "creationDate": "2016-11-03",  
     "actorId": "player1"  
-  }  
-]  
-'''
+  }  
+]  
+```  
 
 ## INSTALLATION NOTES 
 //TODO
