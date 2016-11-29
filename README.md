@@ -80,7 +80,109 @@ null
 
 ### HIGHSCORE
 
-dasdas
+#### Get highscore by actorId  
+**Description** Get Highscore of an actor  
+**URL** http://127.0.0.1:8080/web/rest/highscores?userId=1   
+**Method** GET  
+**HTTP response** 200  
+**HTTP response body (JSON)**  
+'{
+  "identifier": 5,
+  "points": 12341212,
+  "creationDate": "2016-11-03",
+  "actorId": "1"
+}'  
+
+#### Insert highscore  
+**Description** Insert highscore in database  
+**URL** http://127.0.0.1:8080/web/rest/highscores   
+**Method** POST  
+**HTTP request body**  
+'{
+  "identifier": 8,  
+  "points": 31232112,  
+  "creationDate": "2016-11-28",  
+  "actorId": "cr7"  
+}'  
+**HTTP response** 200 (OK) or 430 (NOK)  
+**HTTP response body (JSON)**  
+null  
+
+#### Update highscore  
+**Description** Update an existent highscore in Database.  
+**URL** http://127.0.0.1:8080/web/rest/highscores   
+**Method** PUT  
+**HTTP request body**  
+'{
+  "identifier": 8,  
+  "points": 12,  
+  "creationDate": "2016-11-28",  
+  "actorId": "cr7"  
+}'  
+**HTTP response** 200 (OK) or 430 (NOK)  
+**HTTP response body (JSON)**  
+null  
+
+#### Remove Highscore
+**Description** Remove highscore by giving userId
+**URL** http://127.0.0.1:8080/web/rest/highscores?userId=qu
+**Method** DELETE  
+**HTTP response** 200 (OK) or 430 (NOK)  
+**HTTP response body (JSON)**  
+null  
+
+#### Get All highscores  
+**Description** Get all highscores ordered by Points.  
+**URL** http://127.0.0.1:8080/web/rest/highscores/getall   
+**Method** GET  
+**HTTP response** 200 (OK)  
+**HTTP response body (JSON)**  
+'''
+[  
+  {  
+    "identifier": 4,  
+    "points": 123212,  
+    "creationDate": "2016-11-03",  
+    "actorId": "player"  
+  },  
+  {  
+    "identifier": 3,  
+    "points": 12312,  
+    "creationDate": "2016-11-03",  
+    "actorId": "player1"  
+  },  
+  {  
+    "identifier": 5,  
+    "points": 12,  
+    "creationDate": "2016-11-03",  
+    "actorId": "player2"  
+  }  
+]  
+'''
+
+
+#### Get Slice of all highscores  
+**Description** Get slice of all highscores ordered by Points.  
+**URL** http://127.0.0.1:8080/web/rest/highscores/getbetween?first=1&last=2 
+**Method** GET  
+**HTTP response** 200 (OK)  
+**HTTP response body (JSON)**  
+'''
+[  
+  {  
+    "identifier": 4,  
+    "points": 123212,  
+    "creationDate": "2016-11-03",  
+    "actorId": "player"  
+  },  
+  {  
+    "identifier": 3,  
+    "points": 12312,  
+    "creationDate": "2016-11-03",  
+    "actorId": "player1"  
+  }  
+]  
+'''
 
 ## INSTALLATION NOTES 
-dasdasdas
+//TODO
