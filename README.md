@@ -33,7 +33,7 @@ Used Technologies:
 
 #### Do login  
 **Description** Login user by giving his data  
-**URL** http://127.0.0.1:8080/web/rest/actors/login?publicId=1&password=dasdas 
+**URL** http://127.0.0.1:8080/web/rest/actors/login?publicId=1&password=dasdas  
 **Method** GET  
 **HTTP response** 200  
 **HTTP response body (JSON)**  
@@ -41,11 +41,11 @@ Used Technologies:
 
 #### Remove Actor by his publicId  
 **Description** Remove actor by giving his publicId  
-**URL** http://127.0.0.1:8080/web/rest/actors?publicId=1 
+**URL** http://127.0.0.1:8080/web/rest/actors?publicId=1  
 **Method** DELETE  
-**HTTP response** 200 (OK) or 430 (NOK)
+**HTTP response** 200 (OK) or 430 (NOK)  
 **HTTP response body (JSON)**  
-null
+null  
 
 
 #### Insert actor  
@@ -53,34 +53,31 @@ null
 **URL** http://127.0.0.1:8080/web/rest/actors   
 **Method** POST  
 **HTTP request body**  
-'{ "public_id":"andremfaria",
-   "cryptedPassword":"faria",
-   "nationality":"Brazil",
-   "creationDate":null,
-   "isDeleted":false
+'{ "public_id":"andremfaria",  
+   "cryptedPassword":"faria",  
+   "nationality":"Brazil",  
+   "creationDate":null,  
+   "isDeleted":false  
 }'  
 **HTTP response** 200 (OK) or 430 (NOK)  
 **HTTP response body (JSON)**  
-null
+null  
 
 #### Update actor  
 **Description** Update actor in database  
 **URL** http://127.0.0.1:8080/web/rest/actors   
 **Method** PUT  
 **HTTP request body**  
-'{ "public_id":"andremfaria",
-   "cryptedPassword":"newpassword",
-   "nationality":"Brazil",
-   "creationDate":null,
-   "isDeleted":false
+'{ "public_id":"andremfaria",  
+   "cryptedPassword":"newpassword",  
+   "nationality":"Brazil",  
+   "creationDate":null,  
+   "isDeleted":false  
 }'  
 **HTTP response** 200 (OK) or 430 (NOK)  
 **HTTP response body (JSON)**  
-null
+null  
 
-
-
-dasdas
 ### HIGHSCORE
 
 dasdas
