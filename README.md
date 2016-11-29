@@ -31,7 +31,7 @@ Used Technologies:
   "isDeleted": true  
 }
 ```  
-
+-----------  
 #### Do login  
 **Description** Login user by giving his data  
 **URL** http://127.0.0.1:8080/web/rest/actors/login?publicId=1&password=dasdas  
@@ -39,6 +39,8 @@ Used Technologies:
 **HTTP response** 200  
 **HTTP response body (JSON)**  
 'false' or 'true'  
+
+-----------  
 
 #### Remove Actor by his publicId  
 **Description** Remove actor by giving his publicId  
@@ -48,6 +50,7 @@ Used Technologies:
 **HTTP response body (JSON)**  
 null  
 
+-----------  
 
 #### Insert actor  
 **Description** Insert actor in database  
@@ -62,10 +65,11 @@ null
    "isDeleted":false  
 }
 ```  
-
 **HTTP response** 200 (OK) or 430 (NOK)  
 **HTTP response body (JSON)**  
 null  
+
+-----------  
 
 #### Update actor  
 **Description** Update actor in database  
@@ -85,7 +89,7 @@ null
 **HTTP response body (JSON)**  
 null  
 
-### HIGHSCORE
+### HIGHSCORES
 
 #### Get highscore by actorId  
 **Description** Get Highscore of an actor  
@@ -101,6 +105,8 @@ null
   "actorId": "1"
 }
 ```
+
+-----------  
 
 #### Insert highscore  
 **Description** Insert highscore in database  
@@ -120,20 +126,27 @@ null
 **HTTP response body (JSON)**  
 null  
 
+-----------  
+
 #### Update highscore  
 **Description** Update an existent highscore in Database.  
 **URL** http://127.0.0.1:8080/web/rest/highscores   
 **Method** PUT  
 **HTTP request body**  
-'{
+```
+{
   "identifier": 8,  
   "points": 12,  
   "creationDate": "2016-11-28",  
   "actorId": "cr7"  
-}'  
+}
+``` 
+
 **HTTP response** 200 (OK) or 430 (NOK)  
 **HTTP response body (JSON)**  
 null  
+
+-----------  
 
 #### Remove Highscore
 **Description** Remove highscore by giving userId
@@ -143,14 +156,16 @@ null
 **HTTP response body (JSON)**  
 null  
 
+-----------  
+
 #### Get All highscores  
 **Description** Get all highscores ordered by Points.  
 **URL** http://127.0.0.1:8080/web/rest/highscores/getall   
 **Method** GET  
 **HTTP response** 200 (OK)  
 **HTTP response body (JSON)**  
-
-[  
+```
+[  
   {  
     "identifier": 4,  
     "points": 123212,  
@@ -170,8 +185,9 @@ null
     "actorId": "player2"  
   }  
 ]  
+```
 
-
+-----------  
 
 #### Get Slice of all highscores  
 **Description** Get slice of all highscores ordered by Points.  
@@ -195,6 +211,8 @@ null
   }  
 ]  
 ```  
+
+-----------  
 
 ## INSTALLATION NOTES 
 //TODO
