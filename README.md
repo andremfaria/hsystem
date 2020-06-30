@@ -10,6 +10,9 @@ Used Technologies:
 - MySQL
 - jBoss EAP 6.2
 
+## TODO list
+- [ ] Passing authentication header instead password.  
+- [ ] Commit database scripts.
 
 
 ## REST INTERFACE
