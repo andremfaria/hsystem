@@ -13,6 +13,7 @@ Used Technologies:
 ## TODO list
 - [ ] Passing authentication header instead password.  
 - [ ] Commit database scripts.
+- [ ] Increase database performance
 
 
 ## REST INTERFACE
